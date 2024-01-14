@@ -1,1 +1,1 @@
-# django-oauth-google-facebook
+# Django OAuth with Google and Facebook

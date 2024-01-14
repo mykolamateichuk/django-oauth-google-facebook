@@ -1,0 +1,15 @@
+{% load socialaccount %}
+{% providers_media_js %}
+<html lang="en">
+<head>
+    <title>Google/Facebook Login Demo</title>
+</head>
+<body>
+  <button>
+    <a href="{% provider_login_url "google" %}">Login with Google</a>
+  </button>
+  <button>
+    <a href="{% provider_login_url "facebook" %}">Login with Facebook</a>
+  </button>
+</body>
+</html>

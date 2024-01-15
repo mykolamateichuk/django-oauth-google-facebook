@@ -355,3 +355,5 @@ pyrightconfig.json
 
 cert.pem
 key.pem
+
+.DS_Store

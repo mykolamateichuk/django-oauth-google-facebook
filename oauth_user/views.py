@@ -10,7 +10,7 @@ def index(request):
             "last_name": request.user.last_name,
             "email": request.user.email,
         }
-        return render(request, "index.html", context)
+        return render(request, "oauth_user/index.html", context)
 
     return HttpResponseRedirect("/login")
 
@@ -19,7 +19,7 @@ def login_user(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect("/")
 
-    return render(request, "login.html")
+    return render(request, "oauth_user/login.html")
 
 
 def logout_user(request):

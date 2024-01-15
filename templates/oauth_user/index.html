@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <span>Hello {{ first_name }} {{ last_name }} <em>({{ email }})</em>!</span>
+
+  <a class="btn btn-danger" href="{% url "logout" %}">Logout</a>
+{% endblock %}
